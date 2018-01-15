@@ -1,0 +1,4 @@
+@using Website.Constants;
+@using Website.ModelFactories.RTE;
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@Html.Partial(Macros.RTEImage.PartialPath, ImageFactory.Build(Model.Content))

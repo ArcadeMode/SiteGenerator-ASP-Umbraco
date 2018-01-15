@@ -1,0 +1,29 @@
+<website>
+	<templates>
+		<template alias="Contactpage" name="Contact Page">
+			<ref alias="CommonHeader"/>
+			<ref alias="ContactpageContent"/>
+			<ref alias="CommonFooter"/>
+		</template>
+    <template alias="Aboutpage" name="About Page">
+      <ref alias="CommonHeader"/>
+      <ref alias="AboutpageContent" />
+      <ref alias="AboutpageCTA" />
+      <ref alias="CommonFooter"/>
+    </template>
+    <template alias="Homepage" name="Home Page" children="Contactpage,Aboutpage" allowAsRoot="1">
+      <ref alias="CommonHeader"/>
+      <ref alias="HomepageContent"/>
+      <ref alias="CommonFooter"/>
+    </template>
+	</templates>
+	<partials>
+		<partial group="Common" alias="Header" name="Common Header"/>
+		<partial group="Homepage" alias="Content" name="Homepage Content"/>
+		<partial group="Contactpage" alias="Content" name="Contactpage Content"/>
+		<partial group="Common" alias="Footer" name="Common Footer"/>
+    <partial group="RTE" alias="Image" name="RTE Image" allowInRTE="1"/>
+    <partial group="Aboutpage" alias="Content" name="Aboutpage Content"/>
+    <partial group="Aboutpage" alias="CTA" name="Aboutpage Call To Action"/>
+	</partials>
+</website>

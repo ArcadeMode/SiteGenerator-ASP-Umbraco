@@ -1,0 +1,14 @@
+*.suo
+/packages/*
+scopes
+.tmp/
+.idea/
+.vs/*
+!packages/repositories.config
+*/bin/*
+!*/bin/*.lic
+*/obj/*
+*/media/*
+*/App_Data/*
+*.csproj.user
+TODO

@@ -1,0 +1,4 @@
+@using Website.Constants;
+@using Website.ModelFactories.Common;
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@Html.Partial(Macros.CommonHeader.PartialPath, HeaderFactory.Build(Model.Content))
